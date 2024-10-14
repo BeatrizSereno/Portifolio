@@ -1,0 +1,554 @@
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('./assets/pixel\ font.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel4';
+    src: url('./assets/pixel4.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixeltxt';
+    src: url('./assets/pixeltxt.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #6E875F;
+}
+
+.moldura-site {
+    pointer-events: none;
+    position: fixed;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}
+
+nav {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 13%;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    z-index: 3;
+    display: grid;
+    row-gap: 15px;
+    text-align: center; 
+}
+
+.menu-link {
+    padding: 3px;
+    font-size: 1.2rem;
+    font-family: 'Pixel4';
+    text-decoration: none;
+    color: #314d3b;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    color: aliceblue;
+    background-color: rgb(231, 172, 184, 0.8)
+
+}
+
+.menu-top {
+    position: fixed;
+    left: 95%;
+    top: 95%; 
+}
+
+.top {
+    background-image: url('./assets/seta\ branca.png');
+    background-size: cover;
+    font-family: 'Pixel', sans-serif;
+    font-size: 2vw;
+    color: #fff;
+    text-align: center;
+    height: 2vw;
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.video-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.img-video {
+    position: relative;
+    width: 849px;
+    height: 473px;
+    z-index: 1;   
+}
+
+video {
+    position: absolute;    
+}
+
+.division {
+    width: max(100%, 1000px);
+    height: 50px;
+    background-image: url('./assets/grama\ clara.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 10%;
+}
+
+.floral-frame {
+    position: absolute;
+    margin-top: -1vw;
+    z-index: 5;
+    width: 52vw;
+    height: 29vw;   
+}
+
+.about-me-container {
+    padding-top: 0px;
+    width: 100%;
+    height: 550px;
+    background-color: #95b680;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+}
+
+h2 {
+    z-index: 8;
+    font-family: 'Pixel', sans-serif;
+    text-align: center;
+    font-size: 3vw;
+    color: #395944;
+    padding: 45px; 
+    background-color:#95b680;   
+}
+
+.about-me-box {
+    background-color:#171b15;
+    width: 50vw; 
+    height: 10vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 5px;
+}
+
+.card-status {
+    background-color:#E7ACB8; 
+    border-radius: 0px;   
+    border: solid 3px #F28CB0;
+    box-shadow: inset 2px 3px 0px rgba(141, 70, 95, 0.6),    
+    inset -2px -1px 0px rgb(150, 78, 114,0.6); 
+    font-size: 18px;        
+    color: #333; 
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 25vw; 
+    height: 27vw;
+    z-index: 4;
+}
+
+.about-me-descricao {
+    background-color: #395944;
+}
+
+p {
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: 'Pixeltxt', sans-serif;
+    font-weight: 300;
+    padding: 1vw;
+    text-align: left;    
+}
+
+.pink-character-container {
+    width: 25vw;
+    height: 8vw;
+    margin-top: 1vw;
+    margin-left: 0px; 
+    display: flex;
+    justify-content: center;   
+}
+
+.pink-character-content {
+    background-image: url('./assets/personagem9.gif');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:  #F28CB0;
+    box-shadow: inset 2px 3px 0px rgba(141, 70, 95, 0.6),    
+    inset -2px -1px 0px rgb(150, 78, 114,0.6); 
+    margin-top: 0px;
+    width: 7vw; 
+    height: 6vw;
+}
+
+.name {
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #395944;
+    margin-top: 0vw;
+    display: flex;
+    justify-content: center;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 17% 17% 17%;
+    margin-top:1vw;
+    width: 25vw;
+    height: 25vw;   
+}
+
+.status-text {
+    color:#395944;
+    font-family: 'Pixel', sans-serif;
+    font-size: 1.5vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.status-img {
+    width: 10vw;
+    height: 6vw;
+    margin-top: 0.3vw;
+    margin-left: 1vw;    
+}
+
+.division-2 {
+ width: max(100%, 1000px);
+ height: 50px;
+ background-image: url('./assets/flor9.png');
+ background-position:center;
+ background-repeat: repeat-x;
+ background-size: 20%;
+ background-color:#95b680;     
+}
+
+#word-2-title {
+    padding: 40px;
+    font-size: 3vw;
+    background-image: url('');
+    background: linear-gradient(0deg,rgba(242,140,176,1) -110%, rgb(255, 93, 150) 100%);
+}
+
+.vet-container {
+    overflow: hidden;
+    width: 100%;
+    height: 660px;
+    background: linear-gradient(0deg, rgba(231,172,184,1) 0%, rgba(242,140,176,1) 53%, rgb(255, 93, 150) 100%);
+}
+
+.stars {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: 
+        10px 20px white,
+        100px 50px white,
+        200px 300px white,
+        350px 100px white,
+        450px 500px white,
+        600px 200px white,
+        750px 150px white,
+        900px 400px white,
+        1050px 350px white,
+        1200px 450px white,
+        1350px 100px white,
+        1500px 300px white,
+        1650px 50px white,
+        1800px 500px white,
+        50px 550px white,
+        170px 250px white,
+        320px 70px white,
+        480px 320px white,
+        620px 400px white,
+        770px 500px white,
+        920px 220px white,
+        1080px 180px white,
+        1250px 380px white,
+        1400px 520px white,
+        1580px 160px white,
+        1740px 300px white,
+        1890px 400px white;
+        animation: anim-stars 10s linear infinite;
+}
+
+.stars::after{
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    box-shadow: 
+    10px 20px white,
+    100px 50px white,
+    200px 300px white,
+    350px 100px white,
+    450px 500px white,
+    600px 200px white,
+    750px 150px white,
+    900px 400px white,
+    1050px 350px white,
+    1200px 450px white,
+    1350px 100px white,
+    1500px 300px white,
+    1650px 50px white,
+    1800px 500px white,
+    50px 550px white,
+    170px 250px white,
+    320px 70px white,
+    480px 320px white,
+    620px 400px white,
+    770px 500px white,
+    920px 220px white,
+    1080px 180px white,
+    1250px 380px white,
+    1400px 520px white,
+    1580px 160px white,
+    1740px 300px white,
+    1890px 400px white;
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-500px);
+    }
+}
+
+.stars2 {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: 
+        10px 20px white,
+        100px 50px white,
+        200px 300px white,
+        350px 100px white,
+        450px 500px white,
+        600px 200px white,
+        750px 150px white,
+        900px 400px white,
+        1050px 350px white,
+        1200px 450px white,
+        1350px 100px white,
+        1500px 300px white,
+        1650px 50px white,
+        1800px 500px white,
+        50px 550px white,
+        170px 250px white,
+        320px 70px white,
+        480px 320px white,
+        620px 400px white,
+        770px 500px white,
+        920px 220px white,
+        1080px 180px white,
+        1250px 380px white,
+        1400px 520px white,
+        1580px 160px white,
+        1740px 300px white,
+        1890px 400px white;
+        animation: anim-stars 40s linear infinite;
+}
+
+.stars2::after{
+    content: " ";
+    position: absolute;
+    top: 500px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    box-shadow: 
+    10px 20px white,
+    100px 50px white,
+    200px 300px white,
+    350px 100px white,
+    450px 500px white,
+    600px 200px white,
+    750px 150px white,
+    900px 400px white,
+    1050px 350px white,
+    1200px 450px white,
+    1350px 100px white,
+    1500px 300px white,
+    1650px 50px white,
+    1800px 500px white,
+    50px 550px white,
+    170px 250px white,
+    320px 70px white,
+    480px 320px white,
+    620px 400px white,
+    770px 500px white,
+    920px 220px white,
+    1080px 180px white,
+    1250px 380px white,
+    1400px 520px white,
+    1580px 160px white,
+    1740px 300px white,
+    1890px 400px white;
+}
+
+.vet-content {
+    width: 33vw;
+    height: 25vw;
+    background-color: #88a477;
+    box-shadow: inset 2px 3px 0px rgba(29, 44, 34, 0.7),    
+    inset -2px -1px 0px rgb(29, 44, 34,0.6); 
+    border: #6e8b5c solid 3px;
+    position: absolute;
+    margin-top: -5px;
+    left: 33%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.vet-gif {
+    width: 6vw;
+    height: 6vw;
+    background-color: #6e8b5c;
+    background-image: url('./assets/vet.gif');
+    background-size: 88%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 2px 3px 0px rgba(29, 44, 34, 0.7),    
+    inset -2px -1px 0px rgb(29, 44, 34,0.6); 
+}
+
+h3 {
+    font-family: 'Pixeltxt';
+    margin-top: 1vw;
+    font-size: 2vw;
+    color: #F28CB0;
+}
+
+#works {
+    background-color: #E8ABB8;
+}
+
+.works-container {
+    width: 100%;
+    height: 1200px;
+    background-color: #95b680;
+    display: flex;
+    justify-content: center;  
+}
+
+.works {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work-content {
+   width: 30vw;
+   height: 20vw;
+   background-color: #F28CB0;
+   font-family: 'Pixel', sans-serif;
+   font-size: 1.5vw;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#contact {
+width: 100%;
+height: 4vw;
+background-color:#212f19;
+background-image: url('./assets/flor\ pixel3.png');
+background-size: 23vw;
+background-repeat: repeat-x;
+}
+
+footer {
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.contact-container {
+   width: 100%;
+   height:25vw;
+}
+
+#word-4 {
+    background-color:#6E875F;
+}
+
+
+address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-media {
+    width: 3vw;
+}
+
+#cr {
+    margin-top: -10vw;  
+}
+
+
+
+    
+
+
+
