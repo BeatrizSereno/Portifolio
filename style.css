@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: 'Pixel';
-    src: url('./assets/pixel\ font.ttf') format('opentype');
+    src: url('./public/assets/pixel\ font.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Pixel4';
-    src: url('./assets/pixel4.ttf') format('opentype');
+    src: url('./public/assets/pixel4.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Pixeltxt';
-    src: url('./assets/pixeltxt.ttf') format('opentype');
+    src: url('./public/assets/pixeltxt.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -78,7 +78,7 @@ nav {
 }
 
 .top {
-    background-image: url('./assets/seta\ branca.png');
+    background-image: url('./public/assets/seta\ branca.png');
     background-size: cover;
     font-family: 'Pixel', sans-serif;
     font-size: 2vw;
@@ -121,7 +121,7 @@ video {
 .division {
     width: max(100%, 1000px);
     height: 50px;
-    background-image: url('./assets/grama\ clara.png');
+    background-image: url('./public/assets/grama\ clara.png');
     background-position: center;
     background-repeat: repeat-x;
     background-size: 10%;
@@ -203,7 +203,7 @@ p {
 }
 
 .pink-character-content {
-    background-image: url('./assets/personagem9.gif');
+    background-image: url('./public/assets/personagem9.gif');
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@ p {
 .division-2 {
  width: max(100%, 1000px);
  height: 50px;
- background-image: url('./assets/flor9.png');
+ background-image: url('./public/assets/flor9.png');
  background-position:center;
  background-repeat: repeat-x;
  background-size: 20%;
@@ -457,7 +457,7 @@ p {
     width: 6vw;
     height: 6vw;
     background-color: #6e8b5c;
-    background-image: url('./assets/vet.gif');
+    background-image: url('./public/assets/vet.gif');
     background-size: 88%;
     background-repeat: no-repeat;
     background-position: center;
@@ -509,7 +509,7 @@ h3 {
 width: 100%;
 height: 4vw;
 background-color:#212f19;
-background-image: url('./assets/flor\ pixel3.png');
+background-image: url('./public/assets/flor\ pixel3.png');
 background-size: 23vw;
 background-repeat: repeat-x;
 }
