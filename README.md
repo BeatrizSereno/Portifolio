@@ -13,4 +13,4 @@ Me inspirei em um dos meus jogos favoritos de infância: Zelda: A Link to the pa
 * 🌼 Photoshop
 * 🌼 Illustrator
 ## 🌺 Acesse o meu portifólio aqui 🌺
-https://venerable-mooncake-dab0fa.netlify.app/#home
+https://portifoliobia.netlify.app/
