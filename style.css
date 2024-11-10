@@ -31,6 +31,7 @@ html {
 
 body {
     background-color: #6E875F;
+    overflow-x: hidden;
 }
 
 .moldura-site {
@@ -40,6 +41,18 @@ body {
     height: 100%;
     width: 100%;
     z-index: 9;
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    display: none;
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
 }
 
 nav {
@@ -116,6 +129,8 @@ header {
 
 video {
     position: absolute;    
+    width: 841px;
+     height: 476px;
 }
 
 .division {
@@ -545,6 +560,238 @@ address {
 #cr {
     margin-top: -10vw;  
 }
+
+@media(max-width:480px){
+
+    .moldura-site {
+       display: none;
+    }
+
+    header {
+        width: 100vw;
+        min-height: 50vh;
+    }
+
+    .img-video {
+        position: absolute;
+        width: 92%; 
+        height: auto; 
+        object-fit: contain;  
+    }
+
+    video {
+        width: 91vw;
+        
+    }
+
+    .menu-top {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top:25vh;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 10%;
+        z-index: 2;
+        background-color: #95b680; 
+        transform: translateX(-150%);
+        transition: transform 0.3s ease-in;   
+        margin-top: -50%; 
+    }
+
+    .active {
+        transform: translateX(-45%); 
+        margin-top: -50%;   
+    }  
+
+    .menu-link {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .mobile-menu div {
+        display: block;
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        margin: 8px;
+        position: relative;
+        z-index: 3;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .about-me-container {
+        padding: 0px;
+        margin: 0px;
+        width: 100vw; 
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #171b15;
+    }
+
+    h2 {
+        z-index: 0;
+        margin-top:-1%;
+        width: 100%;
+        text-align: center; 
+        font-size: 2rem;
+    }
+
+    .about-me-box {
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-color: #95b680;  
+    }
+
+    .floral-frame {
+        display: none;
+    }
+
+    .card-status {
+        margin-top: 10vh;
+        transform: scale(2.6);
+        z-index:1;
+        box-shadow: inset 1px 1px 0px rgba(141, 70, 95, 0.6),    
+        inset -1px -1px 0px rgb(150, 78, 114,0.6);  
+    }
+    
+    .about-me-descricao {
+        width: 90vw;
+        margin-top: 15vh;
+        background-color: #95b680;
+
+        &     p {
+            color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            
+        }
+        
+    }
+
+    .pink-character-content {
+        box-shadow: inset 1px 1px 0px rgba(141, 70, 95, 0.6),    
+        inset -1px -1px 0px rgb(150, 78, 114,0.6);      
+    }
+
+    .vet-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #word-2-title {
+        text-align: center;
+        padding: 40px;
+        font-size: 2rem;
+        background-image: url('');
+        background: linear-gradient(0deg,rgba(242,140,176,1) -210%, rgb(255, 93, 150) 100%);
+    }
+
+    .vet-content {
+       margin-top: 25vh; 
+       transform: scale(2.5);
+       box-shadow: inset 1px 1px 0px rgba(29, 44, 34, 0.7),    
+    inset -1px -1px 0px rgb(29, 44, 34,0.6); 
+    }
+
+    .vet-gif {
+        box-shadow: inset 1px 1px 0px rgba(29, 44, 34, 0.7),    
+        inset -1px -1px 0px rgb(29, 44, 34,0.6); 
+    }
+
+    .works {
+        width: 100vw;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-content {
+        width: 100vw;
+        height: 50vh; 
+        font-size: 2rem;
+     }
+
+     footer {
+        margin-top: -0.5vh;
+        width: 100vw;
+        height: 35vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        & p {
+            font-size: 1rem;
+        }
+        
+    }
+    
+    .contact-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height:25vh;
+    }
+    
+    address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #social-media {
+        width: 8vw;
+    }
+    
+    #cr {
+        margin-top: 0vw;  
+    }
+
+    #contact {
+        width: 100%;
+        height: 7vw;
+        background-color:#212f19;
+        background-image: url('./public/assets/flor\ pixel3.png');
+        background-size: 30vw;
+        background-repeat: repeat-x;
+    }
+
+    .top {
+        display: none;
+    } 
+   
+}
+
+
 
 
 
