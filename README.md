@@ -10,7 +10,9 @@ Me inspirei em um dos meus jogos favoritos de infância: Zelda: A Link to the pa
 ## 🌺 Linguagem e programas usados 🌺
 * 🌼 HTML
 * 🌼 CSS
+* 🌼 Javascript
 * 🌼 Photoshop
 * 🌼 Illustrator
+  
 ## 🌺 Acesse o meu portifólio aqui 🌺
 https://portifoliobia.netlify.app/
